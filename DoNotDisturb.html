@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoNotDisturb</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/лого.png" alt="Логотип" class="logo">
+    </div>
+    <h1>Организуй свои дела с нашим приложением-календарем!</h1>
+    <p>Простой и удобный способ управлять временем и задачами.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Функции</a></li>
+      <li><a href="#tech-info">Техническая информация</a></li>
+      <li><a href="#testimonials">Отзывы</a></li>
+      <li><a href="#about-us">О нас</a></li>
+      <li><a href="#download">Скачать</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="features">
+      <h2>Основные функции</h2>
+      <ul>
+        <li>Планирование задач</li>
+        <li>Ежедневные напоминания</li>
+        <li>Красочный интерфейс</li>
+        <li>Отображение календаря друзьям</li>
+        <li>Уведомления в реальном времени</li>
+      </ul>
+    </section>
+
+    <section id="tech-info">
+      <h2>Техническая информация</h2>
+      <p>Наше приложение разработано на Python, что обеспечивает его стабильность и гибкость. Мы используем современные библиотеки и фреймворки для создания удобного интерфейса.</p>
+      <ul>
+        <li>Язык программирования: Python (CustomTKinter)</li>
+        <li>Фреймворк: Flask</li>
+        <li>База данных: SQLite3</li>
+      </ul>
+    </section>
+
+    <section id="testimonials">
+      <h2>Отзывы пользователей</h2>
+      <p>"Это приложение полностью изменило мой подход к планированию!" — <i>Анна, предприниматель</i></p>
+      <p>"Удобный интерфейс и отличная поддержка!" — <i>Иван, студент</i></p>
+      <p>"Теперь я никогда не пропускаю важные встречи." — <i>Екатерина, менеджер</i></p>
+    </section>
+
+    <section id="about-us">
+      <h2>О нашей команде</h2>
+      <p>Мы — небольшая, но увлечённая команда разработчиков, которые стремятся упростить вашу жизнь с помощью современных технологий. Наши ценности: инновации, удобство и поддержка пользователей.</p>
+    </section>
+
+    <section id="faq">
+      <h2>Часто задаваемые вопросы</h2>
+      <details>
+        <summary>Как установить приложение?</summary>
+        <p>Скачайте установочный файл по кнопке выше и следуйте инструкциям на экране.</p>
+      </details>
+      <details>
+        <summary>Это приложение бесплатное?</summary>
+        <p>Да, базовые функции доступны бесплатно.</p>
+      </details>
+    </section>
+
+    <section id="download">
+      <h2>Скачайте сейчас</h2>
+      <button>Скачать приложение</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 DoNotDisturb. Все права защищены.</p>
+    <p>Разработано с любовью командой DoNotDisturb.</p>
+    <div class="social-icons">
+      <a href="https://t.me/krasnojopiy"><img src="images/telegram.png" alt="Telegram"></a>
+      <a href="mailto:egormikhaylov2006@gmail.com"><img src="images/gmail.png" alt="gmail"></a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll("details").forEach(detail => {
+      detail.addEventListener("toggle", () => {
+        const summary = detail.querySelector("summary");
+        summary.style.color = detail.open ? "#9fc5b7" : "inherit";
+      });
+    });
+  </script>
+</body>
+</html>
