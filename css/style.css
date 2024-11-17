@@ -201,7 +201,7 @@ details p {
 }
 
 #download {
-  text-align: center; 
+  text-align: center;
   margin: 20px;
 }
 
@@ -221,4 +221,8 @@ details p {
 
 .download-button:hover {
   background-color: #45a049;
+}
+
+section {
+  scroll-margin-top: 70px;
 }
